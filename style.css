@@ -1,0 +1,11 @@
+/* CSS Document */
+@charset "utf-8";
+
+/** NAVIGATION [fix link color]**/
+.navigation a{
+	color: #00CED1;
+}
+
+.active {
+	border-bottom: 1px solid #d3d3d3;
+}
