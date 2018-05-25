@@ -9,11 +9,12 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css">
     </head>
     <body>
         <div id="app">
             <app></app>
-            <script src="{{asset('js/app.js')}}"></script>
         </div>
+        <script src="{{asset('js/app.js')}}"></script>
     </body>
 </html>

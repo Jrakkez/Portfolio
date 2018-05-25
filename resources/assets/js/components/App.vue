@@ -6,7 +6,9 @@
                     <div class="card-header">Hello World</div>
 
                     <div class="card-body">
-                        Is this bulma
+                        <b-icon icon="account" size="is-small">
+                            Proof that buefy is here
+                        </b-icon>
                     </div>
                 </div>
             </div>
@@ -16,8 +18,6 @@
 
 <script>
 export default {
-  mounted() {
-    console.log("Component mounted.");
-  }
+  name: "App"
 };
 </script>
