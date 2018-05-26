@@ -1,23 +1,20 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card card-default">
-                    <div class="card-header">Hello World</div>
-
-                    <div class="card-body">
-                        <b-icon icon="account" size="is-small">
-                            Proof that buefy is here
-                        </b-icon>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="columns is-mobile">
+        <app-header class="column is-2-desktop is-one-third-tablet header"></app-header>
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
+import AppHeader from "./shared/Header.vue";
+
 export default {
-  name: "App"
+  name: "app",
+  components: {
+    AppHeader
+  }
 };
 </script>
+
+<style scoped>
+</style>

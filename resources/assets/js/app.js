@@ -7,6 +7,10 @@
 import Vue from 'vue'
 import Buefy from 'buefy'
 import 'buefy/lib/buefy.css'
+import VueRouter from 'vue-router'
+import router from './router'
+import App from './components/App.vue'
+
 
 window.Vue = Vue;
 
@@ -16,9 +20,11 @@ window.Vue = Vue;
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('App', require('./components/App.vue'));
 Vue.use(Buefy)
+Vue.use(VueRouter)
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    router,
+    components: { App }
 });
